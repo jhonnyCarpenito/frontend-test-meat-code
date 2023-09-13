@@ -717,6 +717,9 @@ video {
     border-color: #CFCFCF;
     width: 350px;
     color: #3F4544;
+
+    border: 1px solid #cfcfcf;
+    padding: 12px 20px;
   }
   
   .newsletter_input:focus{
