@@ -134,7 +134,7 @@
           </div>
 
           <button :disabled="isDisabledButton"
-            class="newsletter_form_button ">
+            class="newsletter_form_button">
             ENVIAR
           </button>
         </form>
