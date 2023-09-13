@@ -776,3 +776,10 @@ video {
     background-color: #CFCFCF;
   }
   
+  .error{
+    color: #B72C2C;
+  }
+
+  .error_input{
+    border-color: #B72C2C;
+  }
