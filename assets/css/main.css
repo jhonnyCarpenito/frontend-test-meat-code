@@ -486,6 +486,10 @@ video {
       padding-left: 8rem;
       padding-right: 8rem; 
     }
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
   }
   
   .articles_title_container{
