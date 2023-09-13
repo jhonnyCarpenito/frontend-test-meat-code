@@ -373,6 +373,7 @@ video {
     position: relative;
     height: 400px;
     max-width: 100%;
+    height: min(1000px, 100vh) !important;
   
     @media (min-width: 1200px) {
       height: 100vh;
@@ -633,11 +634,9 @@ video {
     }
 
     @media (max-width: 768px) { 
-        gap: 15rem; 
+        column-gap: 15rem;
       }
 
-    
-  
   }
   
   .article_content{
