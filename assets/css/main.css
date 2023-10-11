@@ -408,6 +408,7 @@
 
 .newsletter_form_button:disabled {
   background-color: #CFCFCF;
+  cursor: not-allowed;
 }
 
 .error {
