@@ -34,11 +34,15 @@
 }
 
 .hero_logo {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1;
   font-weight: 700;
   color: #3F4544;
   font-family: 'Caveat', cursive;
+
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
 
   @media (min-width: 1280px) {
     font-size: 6rem;
@@ -85,11 +89,23 @@
   color: #3F4544;
   font-family: 'Caveat', cursive;
 
+  @media (max-width: 768px) {
+    font-size: 4.7rem;
+    line-height: 1;
+  }
 
-  @media (min-width: 1280px) {
+
+  @media (min-width: 768px) {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  @media (min-width: 1224px) {
     font-size: 8rem;
     line-height: 1;
   }
+
+
 }
 
 .hero_title_brush {
@@ -120,8 +136,8 @@
   margin-bottom: 2.5rem;
 
   @media (min-width: 768px) {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   @media (max-width: 768px) {
@@ -242,7 +258,8 @@
   -moz-box-shadow: 1px 10px 16px 7px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: 320px;
-
+  min-width: 200px;
+  
   @media (max-width: 1024px) {
     height: fit-content;
     width: 100%;
@@ -422,10 +439,12 @@
 
 .error {
   color: #B72C2C;
+  font-family:  Open Sans, sans-serif;
 }
 
 .error_input {
   border-color: #B72C2C;
+
 }
 
 .loader {
