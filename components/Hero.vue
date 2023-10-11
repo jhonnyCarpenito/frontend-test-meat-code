@@ -32,5 +32,9 @@
 
             <img src="~/assets/img/brush.png" class="hero_title_brush" alt="Brush image" />
         </div>
+
+        <div class="gradient_button">
+
+        </div>
     </div>
 </template>

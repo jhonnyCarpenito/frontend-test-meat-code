@@ -107,12 +107,16 @@ export default {
             return true;
         },
         validatePhone(value) {
+            if (value.length > 10) {
+                return 'Debe ser un número entre 7 y 10 dígitos';
+            }
             // if the field is empty
             if (!value) {
                 return 'Este campo es requerido';
             }
-            // if the field is not a valid phone
-            const regex = /^[0-9]{10}$/;
+            //validar si el numero de telefono esta entre 7 y 10 digitos
+            const regex = /^[0-9]{7,10}$/;
+
             if (!regex.test(value)) {
                 return 'Debe ser un número de teléfono valido';
             }
