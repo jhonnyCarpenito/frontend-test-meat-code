@@ -281,9 +281,7 @@
     justify-content: flex-start;
   }
 
-  @media (max-width: 768px) {
-    column-gap: 15rem;
-  }
+
 
 }
 
