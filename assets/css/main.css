@@ -367,6 +367,13 @@
   @media (min-width: 1024px) {
     justify-content: space-between;
   }
+
+}
+
+@media (max-width: 767px) {
+  .newsletter_inputs_container>div{
+    width: 100%;
+  }  
 }
 
 .newsletter-input-text {
@@ -399,6 +406,10 @@
 
   border: 1px solid #cfcfcf;
   padding: 12px 20px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .newsletter_input:focus {
