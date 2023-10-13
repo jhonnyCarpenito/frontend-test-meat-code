@@ -136,6 +136,7 @@
   width: min(100%, 1440px);
   margin: auto;
   margin-bottom: 2.5rem;
+  overflow: hidden;
 
   @media (min-width: 768px) {
     padding-left: 137px;
