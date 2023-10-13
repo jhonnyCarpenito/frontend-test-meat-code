@@ -73,12 +73,15 @@
   position: absolute;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  padding-top: 60%;
   width: 100%;
-  bottom: 35%;
+  
+  /* bottom: 40%;  */
 
   @media (min-width: 768px) {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 132px;
+    padding-right: 673px;
+    padding-top: 212px;
   }
 }
 
@@ -161,8 +164,8 @@
 
 .section_title {
   position: relative;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 80px;
+  line-height: 38px;
   font-weight: 700;
   text-align: center;
   color: #3F4544;
@@ -174,24 +177,23 @@
   }
 
   @media (min-width: 768px) {
-    font-size: 85px;
+    font-size: 80px;
     line-height: 38px;
   }
 }
 
-.section_title::after {
+/* .section_title::after {
   background-image: url("/assets/img/brush.png");
   position: absolute;
   left: 0px;
   bottom: -70px;
   width: 100%;
   height: 5rem
-    /* 80px */
   ;
   background-size: cover;
   opacity: 0.2;
   content: "";
-}
+} */
 
 .articles_content {
   display: flex;
@@ -214,13 +216,17 @@
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
   /* drop-shadow-meat-shadow */
   transition: all 0.3s ease;
-  min-height: 400px;
+  min-height: 438px;
   height: fit-content;
+}
+
+article:hover{
+  height: 476px;
 }
 
 .article img {
   width: 100%;
-  max-height: 200px;
+  max-height: 204px;
   object-fit: cover;
 }
 
@@ -260,7 +266,7 @@
   width: 274px;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
-  height: 320px;
+  height: 217px;
   min-width: 200px;
 
   @media (max-width: 1024px) {
@@ -322,14 +328,14 @@
 }
 
 .article_content {
-  padding-top: 2.25rem;
+  padding-top: 39.95px;
   padding-bottom: 2.25rem;
   background-color: #ffffff;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 26.30px;
+  padding-right: 31.56px;
 }
 
 .article_text {
@@ -346,12 +352,13 @@
 
 .newsletter_title_container {
   display: flex;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 90px;
+  margin-bottom: 54px;
   flex-direction: column;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  
 
   @media (min-width: 1024px) {
     margin-bottom: 3rem;
@@ -431,7 +438,7 @@
   padding-bottom: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  margin-top: 2rem;
+  margin-top: 54.14px;
   border-radius: 9999px;
   font-size: 15px;
   line-height: 24px;
@@ -448,7 +455,7 @@
 
   @media (min-width: 1024px) {
     margin-left: auto;
-    margin-right: 0;
+    margin-right: auto;
   }
 
 }

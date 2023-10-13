@@ -17,9 +17,9 @@
 	<!-- Nuestros articulos -->
 	<main class="articles_container">
 		<section>
-			<div class="articles_title_container">
+			<!-- <div class="articles_title_container">
 				<SectionTitle title="Nuestros artículos" />
-			</div>
+			</div> -->
 
 			<div class="articles_content">
 				<!-- Articulos -->
