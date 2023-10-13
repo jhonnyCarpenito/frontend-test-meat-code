@@ -73,14 +73,21 @@
   position: absolute;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  padding-top: 60%;
+  padding-top: 100%;
+  text-align: center;
   width: 100%;
-  
-  /* bottom: 40%;  */
 
+  /* bottom: 40%;  */
   @media (min-width: 768px) {
+    text-align: left;
     padding-left: 132px;
-    padding-right: 673px;
+    padding-top: 400px;
+  }
+
+
+  @media (min-width: 1000px) {
+    text-align: left;
+    padding-left: 132px;
     padding-top: 212px;
   }
 }
@@ -129,7 +136,7 @@
 .gradient_button {
   background: linear-gradient(0deg, #FFF 0%, #FFF 32.22%, rgba(255, 255, 255, 0.71) 61.99%, rgba(255, 255, 255, 0.07) 93.72%, rgba(255, 255, 255, 0.00) 93.72%);
   width: 100%;
-  height: 50px;
+  height: 228px;
   position: absolute;
   bottom: 0;
 }
@@ -170,10 +177,11 @@
   text-align: center;
   color: #3F4544;
   font-family: 'Caveat', cursive;
+  margin: 91px 0 54px;
 
   @media (max-width: 768px) {
     font-size: 3.3rem;
-    
+
   }
 
   @media (min-width: 768px) {
@@ -217,12 +225,9 @@
   /* drop-shadow-meat-shadow */
   transition: all 0.3s ease;
   min-height: 438px;
-  height: fit-content;
 }
 
-article:hover{
-  height: 476px;
-}
+
 
 .article img {
   width: 100%;
@@ -268,6 +273,7 @@ article:hover{
   border-radius: 10px;
   height: 217px;
   min-width: 200px;
+  padding: 24px 23px 16px;
 
   @media (max-width: 1024px) {
     height: fit-content;
@@ -282,7 +288,6 @@ article:hover{
   align-items: center;
   width: 100%;
   height: 50px;
-  padding: 8px 24px;
   cursor: pointer;
   border-radius: 8px;
   background-color: #ffffff;
@@ -320,10 +325,11 @@ article:hover{
     justify-content: flex-start;
   }
 
- @media (min-width: 1300px) {
+  @media (min-width: 1300px) {
     grid-template-columns: repeat(3, 270px);
-    gap: 30px;
- }
+    column-gap: 30px;
+    row-gap: 35.93px;
+  }
 
 }
 
@@ -347,83 +353,73 @@ article:hover{
 }
 
 .article:hover .article_text {
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
 
-.newsletter_title_container {
-  display: flex;
-  margin-top: 90px;
-  margin-bottom: 54px;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  
-
-  @media (min-width: 1024px) {
-    margin-bottom: 3rem;
-    width: 640px;
-  }
-}
 
 .newsletter_form {
-  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .newsletter_inputs_container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 351px);
+  column-gap: 20.77px;
+  row-gap: 9.86px;
   justify-content: center;
-
-  @media (min-width: 1024px) {
-    justify-content: space-between;
-  }
 
 }
 
 @media (max-width: 767px) {
-  .newsletter_inputs_container>div{
+  .newsletter_inputs_container>div {
     width: 100%;
-  }  
+  }
+
+  .newsletter_inputs_container {
+    grid-template-columns: 1fr;
+  }
 }
 
-.newsletter-input-text {
+.newsletter_inputs_container label {
+  display: flex;
+  width: 370px;
+  height: 37px;
+  flex-direction: column;
+  justify-content: center;
+  color: #24272A;
+  font-family: Open Sans;
   font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 24px;
-  font-weight: 700;
-  font-family: Open Sans, sans-serif;
-}
-
-.newsletter-input-phone {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-weight: 700;
-  font-family: Open Sans, sans-serif;
   text-transform: uppercase;
 }
 
+
 .newsletter_input {
   display: block;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   margin-top: 0.5rem;
   border-width: 1px;
   font-size: 0.875rem;
   line-height: 1.25rem;
   background-color: #ffffff;
   border-color: #CFCFCF;
-  width: 350px;
+  width: 351px;
   color: #3F4544;
 
   border: 1px solid #cfcfcf;
-  padding: 12px 20px;
+  padding: 12px 22px 11px;
+
 
   @media (max-width: 767px) {
     width: 100%;
   }
+}
+
+.newsletter_input:disabled {
+  border: 1px solid #CFCFCF;
+  background: #FFF;
 }
 
 .newsletter_input:focus {
@@ -438,7 +434,7 @@ article:hover{
   padding-bottom: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  margin-top: 54.14px;
+  margin-top: 64.14px;
   border-radius: 9999px;
   font-size: 15px;
   line-height: 24px;
@@ -471,7 +467,7 @@ article:hover{
 
 .error {
   color: #B72C2C;
-  font-family:  Open Sans, sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 
 .error_input {

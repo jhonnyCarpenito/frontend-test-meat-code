@@ -3,7 +3,7 @@
         <div class="newsletter_inputs_container">
             <div>
                 <label class="newsletter-input-text" for="name">NOMBRE</label>
-                <Field name="name" type="text" v-model="form.firstname" class="newsletter_input"
+                <Field :disabled="isDisabledInput" name="name" type="text" v-model="form.firstname" class="newsletter_input"
                     :class="{ 'error_input': errors.name }" :rules="validateName" />
                 <span class="error">
                     <ErrorMessage name="name" />
@@ -11,8 +11,8 @@
             </div>
             <div>
                 <label class="newsletter-input-text" for="lastname">APELLIDO</label>
-                <Field name="lastname" type="text" v-model="form.lastname" class="newsletter_input"
-                    :class="{ 'error_input': errors.lastname }" :rules="validateLastName" />
+                <Field :disabled="isDisabledInput" name="lastname" type="text" v-model="form.lastname"
+                    class="newsletter_input" :class="{ 'error_input': errors.lastname }" :rules="validateLastName" />
                 <span class="error">
                     <ErrorMessage name="lastname" />
                 </span>
@@ -20,7 +20,7 @@
 
             <div>
                 <label class="newsletter-input-text" for="mail">MAIL</label>
-                <Field name="email" type="email" v-model="form.email" class="newsletter_input"
+                <Field :disabled="isDisabledInput" name="email" type="email" v-model="form.email" class="newsletter_input"
                     :class="{ 'error_input': errors.email }" :rules="validateEmail" />
                 <span class="error">
                     <ErrorMessage name="email" />
@@ -29,7 +29,7 @@
 
             <div>
                 <label class="newsletter-input-phone" for="phone">téléfono</label>
-                <Field name="phone" type="tel" v-model="form.phone" class="newsletter_input"
+                <Field :disabled="isDisabledInput" name="phone" type="tel" v-model="form.phone" class="newsletter_input"
                     :class="{ 'error_input': errors.phone }" :rules="validatePhone" />
                 <span class="error">
                     <ErrorMessage name="phone" />
@@ -64,12 +64,14 @@ export default {
                 email: '',
                 phone: ''
             },
-            isDisabledButton: false
+            isDisabledButton: false,
+            isDisabledInput: false
         }
     },
     methods: {
         handleSubmit() {
             this.isDisabledButton = true
+            this.isDisabledInput = true
             axios.post('https://5eed24da4cbc340016330f0d.mockapi.io/api/newsletter', this.form)
                 .then(response => {
                     Swal.fire({
@@ -85,6 +87,7 @@ export default {
                     })
                 }).finally(() => {
                     this.isDisabledButton = false
+                    this.isDisabledInput = false
                     this.form = {
                         firstname: '',
                         lastname: '',

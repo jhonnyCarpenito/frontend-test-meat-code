@@ -17,10 +17,6 @@
 	<!-- Nuestros articulos -->
 	<main class="articles_container">
 		<section>
-			<!-- <div class="articles_title_container">
-				<SectionTitle title="Nuestros artículos" />
-			</div> -->
-
 			<div class="articles_content">
 				<!-- Articulos -->
 				<Articles :articles="articles" />
@@ -30,9 +26,7 @@
 
 		<!-- Contactanos -->
 		<section>
-			<div class="newsletter_title_container">
-				<SectionTitle title="Contáctanos" />
-			</div>
+			<SectionTitle title="Contáctanos" />
 
 			<!-- Formulario-->
 			<FormContact />
