@@ -369,7 +369,7 @@
   }
 
   .newsletter_inputs_container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 }
 
