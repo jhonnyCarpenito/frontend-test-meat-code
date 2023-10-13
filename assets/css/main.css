@@ -80,6 +80,7 @@
   font-weight: 700;
   color: #3F4544;
   font-family: 'Caveat', cursive;
+  padding-top: 400px;
 
   @media (max-width: 768px) {
     font-size: 4.7rem;
@@ -90,7 +91,7 @@
     font-size: 6rem;
     line-height: 1;
     text-align: left;
-    padding-left: 132px;
+    padding-left: 20px;
     padding-top: 400px;
   }
 
