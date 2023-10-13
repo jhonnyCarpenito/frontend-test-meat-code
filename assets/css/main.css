@@ -81,6 +81,7 @@
   color: #3F4544;
   font-family: 'Caveat', cursive;
   padding-top: 400px;
+  padding-left: 20px;
 
   @media (max-width: 768px) {
     font-size: 4.7rem;
