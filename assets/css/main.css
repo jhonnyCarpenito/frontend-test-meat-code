@@ -70,26 +70,8 @@
 }
 
 .hero_title_container {
-  position: absolute;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 100%;
-  text-align: center;
-  width: 100%;
-
-  /* bottom: 40%;  */
-  @media (min-width: 768px) {
-    text-align: left;
-    padding-left: 132px;
-    padding-top: 400px;
-  }
-
-
-  @media (min-width: 1000px) {
-    text-align: left;
-    padding-left: 132px;
-    padding-top: 212px;
-  }
+  width: min(100%, 1440px);
+  margin: auto;
 }
 
 .hero_title {
@@ -104,17 +86,24 @@
     line-height: 1;
   }
 
-
   @media (min-width: 768px) {
     font-size: 6rem;
     line-height: 1;
+    text-align: left;
+    padding-left: 132px;
+    padding-top: 400px;
+  }
+
+  @media (min-width: 1000px) {
+    text-align: left;
+    padding-left: 132px;
+    padding-top: 212px;
   }
 
   @media (min-width: 1224px) {
     font-size: 8rem;
     line-height: 1;
   }
-
 }
 
 .hero_title_brush {
@@ -142,11 +131,13 @@
 }
 
 .articles_container {
+  width: min(100%, 1440px);
+  margin: auto;
   margin-bottom: 2.5rem;
 
   @media (min-width: 768px) {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 137px;
+    padding-right: 137px;
   }
 
   @media (max-width: 768px) {
