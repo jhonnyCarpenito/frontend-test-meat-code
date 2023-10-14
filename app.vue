@@ -19,7 +19,7 @@
 		<section>
 			<div class="articles__content">
 				<!-- Articulos -->
-				<Articles :articles="articles" />
+				<Articles />
 			</div>
 		</section>
 
