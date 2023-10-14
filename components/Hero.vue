@@ -10,7 +10,6 @@
                 El secreto <br />
                 de tu cocina
             </h1>
-
         </div>
 
         <div class="gradient__bottom"></div>
