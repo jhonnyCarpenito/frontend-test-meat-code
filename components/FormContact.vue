@@ -70,32 +70,32 @@ export default {
         }
     },
     methods: {
-        handleSubmit() {
-            this.isDisabledButton = true
-            this.isDisabledInput = true
-            axios.post('https://5eed24da4cbc340016330f0d.mockapi.io/api/newsletter', this.form)
-                .then(response => {
-                    Swal.fire({
-                        icon: 'success',
-                        title: '¡Gracias!',
-                        text: 'Tu información ha sido enviada',
-                    })
-                }).catch(error => {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Hubo un error, intenta de nuevo',
-                    })
-                }).finally(() => {
-                    this.isDisabledButton = false
-                    this.isDisabledInput = false
-                    this.form = {
-                        firstname: '',
-                        lastname: '',
-                        email: '',
-                        phone: ''
-                    }
-                })
+        async handleSubmit() {
+            this.isDisabledButton = true;
+            this.isDisabledInput = true;
+            try {
+                const response = await axios.post('https://5eed24da4cbc340016330f0d.mockapi.io/api/newsletter', this.form);
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Gracias!',
+                    text: 'Tu información ha sido enviada',
+                });
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Hubo un error, intenta de nuevo',
+                });
+            } finally {
+                this.isDisabledButton = false;
+                this.isDisabledInput = false;
+                this.form = {
+                    firstname: '',
+                    lastname: '',
+                    email: '',
+                    phone: '',
+                };
+            }
         },
         validateEmail(value) {
             // if the field is empty
