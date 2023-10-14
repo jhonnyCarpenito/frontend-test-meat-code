@@ -1,4 +1,25 @@
 
+.section__title {
+    position: relative;
+    font-size: 80px;
+    line-height: 38px;
+    font-weight: 700;
+    text-align: center;
+    color: #3F4544;
+    font-family: 'Caveat', cursive;
+    margin: 91px 0 54px;
+
+    @media (max-width: 768px) {
+        font-size: 3.3rem;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 80px;
+        line-height: 38px;
+    }
+}
+
+
 /*** LOADER ***/
 
 .loader {
