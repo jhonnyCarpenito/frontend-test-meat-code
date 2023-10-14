@@ -3,9 +3,9 @@
         <img :src="article.image" width="270" height="200" alt="Image Preview" />
 
         <div class="article__content">
-            <p class="article__title">
+            <h3 class="article__title">
                 {{ article.title }}
-            </p>
+            </h3>
             <p class="article__text">
                 {{ article.content }}
             </p>

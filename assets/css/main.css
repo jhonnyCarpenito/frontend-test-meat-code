@@ -1,4 +1,5 @@
 /*** HERO SECTION ***/
+
 .hero__container {
     position: relative;
     height: 400px;
@@ -74,6 +75,7 @@
     position: absolute;
     bottom: 0;
 }
+
 
 /*** ARTICLES SECTION ***/
 
@@ -305,8 +307,10 @@
     display: block;
     margin-top: 0.5rem;
     border-width: 1px;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
     background-color: #ffffff;
     border-color: #CFCFCF;
     width: 351px;
@@ -377,6 +381,7 @@
 
 }
 
+
 /*** LOADER ***/
 
 .loader {
@@ -406,4 +411,8 @@
     align-items: center;
     flex: 1 1 0%;
     max-width: 1000px;
+}
+
+.swal2-modal {
+    font-family: Open Sans, sans-serif;
 }
