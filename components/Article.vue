@@ -2,15 +2,15 @@
     <article class="article">
         <img :src="article.image" width="270" height="200" alt="Image Preview" />
 
-        <div class="article_content">
-            <p class="article_title">
+        <div class="article__content">
+            <p class="article__title">
                 {{ article.title }}
             </p>
-            <p class="article_text">
+            <p class="article__text">
                 {{ article.content }}
             </p>
 
-            <a href="#" class="article_button">ver más</a>
+            <a href="#" class="article__button">ver más</a>
         </div>
     </article>
 </template>

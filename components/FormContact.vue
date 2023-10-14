@@ -1,36 +1,37 @@
 <template>
-    <Form ref="form" class="newsletter_form" @submit="handleSubmit" v-slot="{ errors }">
-        <div class="newsletter_inputs_container">
+    <Form ref="form" class="newsletter__form" @submit="handleSubmit" v-slot="{ errors }">
+        <div class="newsletter__inputs-container">
             <div>
-                <label class="newsletter-input-text" for="name">NOMBRE</label>
-                <Field :disabled="isDisabledInput" name="name" type="text" v-model="form.firstname" class="newsletter_input"
-                    :class="{ 'error_input': errors.name }" :rules="validateName" />
+                <label class="newsletter__input-label" for="name">NOMBRE</label>
+                <Field :disabled="isDisabledInput" name="name" type="text" v-model="form.firstname"
+                    class="newsletter__input" :class="{ 'error__input': errors.name }" :rules="validateName" />
                 <span class="error">
                     <ErrorMessage name="name" />
                 </span>
             </div>
+
             <div>
-                <label class="newsletter-input-text" for="lastname">APELLIDO</label>
+                <label class="newsletter__input-label" for="lastname">APELLIDO</label>
                 <Field :disabled="isDisabledInput" name="lastname" type="text" v-model="form.lastname"
-                    class="newsletter_input" :class="{ 'error_input': errors.lastname }" :rules="validateLastName" />
+                    class="newsletter__input" :class="{ 'error__input': errors.lastname }" :rules="validateLastName" />
                 <span class="error">
                     <ErrorMessage name="lastname" />
                 </span>
             </div>
 
             <div>
-                <label class="newsletter-input-text" for="mail">MAIL</label>
-                <Field :disabled="isDisabledInput" name="email" type="email" v-model="form.email" class="newsletter_input"
-                    :class="{ 'error_input': errors.email }" :rules="validateEmail" />
+                <label class="newsletter__input-label" for="mail">MAIL</label>
+                <Field :disabled="isDisabledInput" name="email" type="email" v-model="form.email" class="newsletter__input"
+                    :class="{ 'error__input': errors.email }" :rules="validateEmail" />
                 <span class="error">
                     <ErrorMessage name="email" />
                 </span>
             </div>
 
             <div>
-                <label class="newsletter-input-phone" for="phone">téléfono</label>
-                <Field :disabled="isDisabledInput" name="phone" type="tel" v-model="form.phone" class="newsletter_input"
-                    :class="{ 'error_input': errors.phone }" :rules="validatePhone" />
+                <label class="newsletter__input-label" for="phone">téléfono</label>
+                <Field :disabled="isDisabledInput" name="phone" type="tel" v-model="form.phone" class="newsletter__input"
+                    :class="{ 'error__input': errors.phone }" :rules="validatePhone" />
                 <span class="error">
                     <ErrorMessage name="phone" />
                 </span>
@@ -38,7 +39,7 @@
         </div>
 
         <button :disabled="isDisabledButton || errors.name || errors.lastname || errors.email || errors.phone"
-            class="newsletter_form_button">
+            class="newsletter__form-button">
             ENVIAR
         </button>
     </Form>

@@ -15,12 +15,11 @@
 	<Hero />
 
 	<!-- Nuestros articulos -->
-	<main class="articles_container">
+	<main class="articles__container">
 		<section>
-			<div class="articles_content">
+			<div class="articles__content">
 				<!-- Articulos -->
 				<Articles :articles="articles" />
-
 			</div>
 		</section>
 

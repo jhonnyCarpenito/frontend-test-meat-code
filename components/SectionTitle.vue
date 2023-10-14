@@ -1,5 +1,5 @@
 <template>
-    <h2 class="section_title">
+    <h2 class="section__title">
         {{ title }}
     </h2>
 </template>
